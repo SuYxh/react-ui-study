@@ -2,6 +2,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import './styles/index.scss'
 
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
 library.add(fas)
 
 export { default as Button } from './components/Button'
@@ -16,3 +20,10 @@ export { default as Tabs } from './components/Tabs'
 export { default as Alert } from './components/Alert'
 export { default as Select } from './components/Select'
 export { default as Form } from './components/Form'
+
+
+
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <App />,
+)
